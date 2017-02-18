@@ -149,20 +149,22 @@ public static void mostrarjugadores(){
         
 }
     private void btnmostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmostrarActionPerformed
-      String nombObt, altuObt, pesoObt, edadObt;
+      String Nomb, Altu, Peso, Edad;
       try{ 
           int tama = listEjer.size();
               
               //{
-          nombObt = String.valueOf(objeprob.nombre());
-          altuObt = String.valueOf(objeprob.altura());
-          pesoObt = String.valueOf(objeprob.peso());
-          edadObt = String.valueOf(objeprob.edad());
+          Nomb = String.valueOf(objeprob.nombre());
+          Edad = String.valueOf(objeprob.edad());
+          Altu = String.valueOf(objeprob.altura());
+          Peso = String.valueOf(objeprob.peso());
+          
            // for (int x=0; x<tama;x++)           
             {
-          JOptionPane.showMessageDialog(this,"Nombre: "+ nombObt +" Edad: " + edadObt +" Altura: " + altuObt +" Peso: " + pesoObt);
-            }
+          JOptionPane.showMessageDialog(this,"Nombre: "+ Nomb +" Edad: " + Edad +" Altura: " + Altu +" Peso: " + Peso);
+            
           //System.out.println(nombObt +" " + edadObt +" " + altuObt +" " + pesoObt);
+      }
       }
     //  }
         catch (Exception e) {

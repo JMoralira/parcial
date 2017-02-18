@@ -83,6 +83,60 @@ public class Probl1 {
         this.Peso = Peso;
     }
     
+     public ArrayList jugaTodo()
+    {
+        ArrayList<String> nombre = new ArrayList<String>();
+         String Nom = getNombre();
+             int Eda = getEdad();
+             Integer.toString(Eda);
+                 double altura = getAltura(); 
+                 Double.toString(altura);
+                     double pes = getPeso();
+                     Double.toString(pes);
+                     String juga2 = (Nom + "," + Eda +","+ altura +","+ pes);
+                 
+          nombre.add(juga2);
+       for(int x=0;x<nombre.size();x++) {
+          System.out.println(nombre.get(x));
+}         
+          return nombre;
+    }
+    public ArrayList nombre()
+    {
+         ArrayList<String> nombre = new ArrayList<String>();
+         String nomb = getNombre();
+                            
+          nombre.add(nomb);
+        return nombre;
+    }
+    
+     public ArrayList edad()
+    {
+         ArrayList<String> edad2 = new ArrayList<String>();
+        
+             String edad = Integer.toString(getEdad());
+              edad2.add(edad);
+          return edad2;
+          
+    }
+       public ArrayList altura()
+    {
+         ArrayList<String> edad2 = new ArrayList<String>();
+        
+             String alt = Double.toString(getAltura());
+              edad2.add(alt);
+          return edad2;
+          
+    }
+         public ArrayList peso()
+    {
+         ArrayList<String> edad2 = new ArrayList<String>();
+        
+             String peso = Double.toString(getPeso());
+              edad2.add(peso);
+          return edad2;
+          
+    }
     
 }
 
